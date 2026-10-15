@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cliente Catalogo Residuos peligrosos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cliente Catalogo Residuos peligrosos</h1>
+
+        <!-- Método HTTP -->
+        <label for="method">Método:</label>
+
+        <select id="method">
+            <option value="GET">GET</option>
+        </select>
+
+
+        <!-- URL -->
+        <label for="url">URL:</label>
+
+        <input
+            type="text"
+            id="url"
+            value="http://localhost:3000/productos"
+        >
+
+
+        <!-- Datos -->
+        <h3>Datos</h3>
+
+		<!-- ID -->
+        <label for="id">ID:</label>
+
+        <input
+            type="number"
+            id="id"
+            placeholder="Para PATCH o DELETE"
+        >
+
+
+        <label for="nombre">Nombre:</label>
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Ej. Teclado"
+        >
+
+
+        <!-- Botón -->
+        <button id="execute">
+            EJECUTAR
+        </button>
+
+
+        <!-- Respuesta -->
+        <h3>Respuesta</h3>
+
+        <pre id="response"></pre>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
