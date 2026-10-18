@@ -21,6 +21,9 @@
 
         <select id="method">
             <option value="GET">GET</option>
+			<option value="POST">POST</option>
+            <option value="PATCH">PATCH</option>
+            <option value="DELETE">DELETE</option>
         </select>
 
 
@@ -39,22 +42,67 @@
 
 		<!-- ID -->
         <label for="id">ID:</label>
-
         <input
             type="number"
             id="id"
             placeholder="Para PATCH o DELETE"
         >
 
+		<!-- Nivel -->
+		<label for="nivel">Nivel:</label>
+		<input
+			type="number"
+			id="nivel"
+		>
+		
+		<!-- Estante -->
+		<label for="estante">Estante:</label>
+		<input
+			type="text"
+			id="estante"
+		>
+		
+		<!-- Nombre -->
+		<label for="nombre">Nombre:</label>
+		<input
+			type="text"
+			id="nombre"
+		>
 
-        <label for="nombre">Nombre:</label>
+        <!-- Marca -->
+		<label for="marca">Marca:</label>
+		<input
+			type="text"
+			id="marca"
+		>
 
-        <input
-            type="text"
-            id="nombre"
-            placeholder="Ej. Teclado"
-        >
+        <!-- Cantidad -->
+		<label for="cantidad">Cantidad:</label>
+		<input
+			type="text"
+			id="nombre"
+		>
 
+        <!-- Unidades -->
+		<label for="unidades">Unidades:</label>
+		<input
+			type="number"
+			id="unidades"
+		>
+
+        <!-- Fecha AD -->
+		<label for="fecha_ad">Fecha AD:</label>
+		<input
+			type="date"
+			id="fecha_ad"
+		>
+
+        <!-- Fecha AP -->
+		<label for="fecha_ap">Fecha_AP:</label>
+		<input
+			type="date"
+			id="fecha_ap"
+		>
 
         <!-- Botón -->
         <button id="execute">
