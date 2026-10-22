@@ -33,7 +33,7 @@
         <input
             type="text"
             id="url"
-            value="http://localhost:3000/productos"
+            value="http://localhost:3000/substancias"
         >
 
 
@@ -80,7 +80,7 @@
 		<label for="cantidad">Cantidad:</label>
 		<input
 			type="text"
-			id="nombre"
+			id="cantidad"
 		>
 
         <!-- Unidades -->
@@ -103,6 +103,48 @@
 			type="date"
 			id="fecha_ap"
 		>
+
+		<h3>Peligrosidad</h3>
+
+		<label>
+			<input type="checkbox" id="pel_cor">
+			Corrosivo
+		</label>
+
+		<label>
+			<input type="checkbox" id="pel_tox">
+			Tóxico
+		</label>
+
+		<label>
+			<input type="checkbox" id="pel_mut">
+			Mutagénico
+		</label>
+
+		<label>
+			<input type="checkbox" id="pel_inf">
+			Inflamable
+		</label>
+
+		<label>
+			<input type="checkbox" id="pel_irr">
+			Irritante
+		</label>
+
+		<label>
+			<input type="checkbox" id="pel_exp">
+			Explosivo
+		</label>
+
+		<label>
+			<input type="checkbox" id="pel_com">
+			Comburente
+		</label>
+
+		<label>
+			<input type="checkbox" id="pel_gas">
+			Gas
+		</label>
 
         <!-- Botón -->
         <button id="execute">
