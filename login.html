@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Catálogo de Residuos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js" defer></script>
+</head>
+
+<body>
+    <div class="container" id="login-panel">
+        <h1>Iniciar sesión</h1>
+        <p>Ingresa tus credenciales institucionales.</p>
+
+        <form id="login-form">
+            <label for="identidad">Correo institucional:</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre de usuario"
+                autocomplete="username"
+                required
+            >
+
+            <label for="password">Contraseña:</label>
+            <input
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Contraseña"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit" id="login-button">
+                Iniciar sesión
+            </button>
+        </form>
+
+        <pre id="login-response" aria-live="polite"></pre>
+    </div>
+</body>
+</html>
