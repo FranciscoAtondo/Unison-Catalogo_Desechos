@@ -5,11 +5,13 @@ const id = document.getElementById("id");
 const nivel = document.getElementById("nivel");
 const estante = document.getElementById("estante");
 const nombre = document.getElementById("nombre");
+const cas = document.getElementById("cas");
 const marca = document.getElementById("marca");
 const cantidad = document.getElementById("cantidad");
 const unidades = document.getElementById("unidades");
 const fecha_ad = document.getElementById("fecha_ad");
 const fecha_ap = document.getElementById("fecha_ap");
+const fecha_cad = document.getEleemntById("fecha_cad");
 
 const pel_cor = document.getElementById("pel_cor");
 const pel_tox = document.getElementById("pel_tox");
@@ -19,6 +21,9 @@ const pel_irr = document.getElementById("pel_irr");
 const pel_exp = document.getElementById("pel_exp");
 const pel_com = document.getElementById("pel_com");
 const pel_gas = document.getElementById("pel_gas");
+
+const obs = document.getElementById("obs");
+const indicaciones = document.getElementById("indicaciones");
 
 const execute = document.getElementById("execute");
 const response = document.getElementById("response");
@@ -69,9 +74,11 @@ execute.addEventListener("click", async () => {
             marca: marca.value,
             cantidad: cantidad.value,
             unidades: numeroOTextoVacio(unidades.value),
+			cas: cas.value,
 
-            fecha_ad: fecha_ad.value || null,
-            fecha_ap: fecha_ap.value || null,
+            fecha_ad: fecha_ad.value,
+            fecha_ap: fecha_ap.value,
+			fecha_cad: fecha_cad.value,
 
             pel_cor: pel_cor.checked,
             pel_tox: pel_tox.checked,
@@ -80,7 +87,10 @@ execute.addEventListener("click", async () => {
             pel_irr: pel_irr.checked,
             pel_exp: pel_exp.checked,
             pel_com: pel_com.checked,
-            pel_gas: pel_gas.checked
+            pel_gas: pel_gas.checked,
+			
+			obs: obs.value,
+			indicaciones: indicaciones.value
         };
 
         options.body = JSON.stringify(data);

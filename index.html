@@ -41,32 +41,39 @@
         <h3>Datos</h3>
 
 		<!-- ID -->
-        <label for="id">ID:</label>
+        <label for="id">ID - Identificacion dentro de la Base de Datos individual:</label>
         <input
             type="number"
             id="id"
             placeholder="Para PATCH o DELETE"
         >
 
-		<!-- Nivel -->
-		<label for="nivel">Nivel:</label>
-		<input
-			type="number"
-			id="nivel"
-		>
-		
 		<!-- Estante -->
-		<label for="estante">Estante:</label>
+		<label for="estante">Id. Estante:</label>
 		<input
 			type="text"
 			id="estante"
 		>
 		
+		<!-- Nivel -->
+		<label for="nivel">Nivel de Estante:</label>
+		<input
+			type="number"
+			id="nivel"
+		>
+		
 		<!-- Nombre -->
-		<label for="nombre">Nombre:</label>
+		<label for="nombre">Nombre de la Substancia:</label>
 		<input
 			type="text"
 			id="nombre"
+		>
+		
+		<!-- Numero CAS -->
+		<label for="cas">Numero CAS:</label>
+		<input
+			type="text"
+			id="cas"
 		>
 
         <!-- Marca -->
@@ -84,73 +91,70 @@
 		>
 
         <!-- Unidades -->
-		<label for="unidades">Unidades:</label>
+		<label for="unidades">Tipo de Unidades de Cantidad:</label>
 		<input
 			type="number"
 			id="unidades"
 		>
 
-        <!-- Fecha AD -->
-		<label for="fecha_ad">Fecha AD:</label>
+        <!-- Fecha Adquicision -->
+		<label for="fecha_ad">Fecha de Adquicision:</label>
 		<input
 			type="date"
 			id="fecha_ad"
 		>
 
-        <!-- Fecha AP -->
-		<label for="fecha_ap">Fecha_AP:</label>
+        <!-- Fecha Apertura -->
+		<label for="fecha_ap">Fecha de Apertura:</label>
 		<input
 			type="date"
 			id="fecha_ap"
 		>
+		
+		<!-- Fecha Caducidad -->
+		<label for="fecha_cad">Fecha de Caducidad:</label>
+		<input
+			type="date"
+			id="fecha_cad"
+		>
 
 		<h3>Peligrosidad</h3>
 
-		<label>
-			<input type="checkbox" id="pel_cor">
-			Corrosivo
-		</label>
+		<label>	<input type="checkbox" id="pel_cor">Corrosivo</label>
 
-		<label>
-			<input type="checkbox" id="pel_tox">
-			Tóxico
-		</label>
+		<label>	<input type="checkbox" id="pel_tox">Tóxico</label>
 
-		<label>
-			<input type="checkbox" id="pel_mut">
-			Mutagénico
-		</label>
+		<label> <input type="checkbox" id="pel_mut">Mutagénico</label>
 
-		<label>
-			<input type="checkbox" id="pel_inf">
-			Inflamable
-		</label>
+		<label> <input type="checkbox" id="pel_inf">Inflamable</label>
 
-		<label>
-			<input type="checkbox" id="pel_irr">
-			Irritante
-		</label>
+		<label> <input type="checkbox" id="pel_irr">Irritante</label>
 
-		<label>
-			<input type="checkbox" id="pel_exp">
-			Explosivo
-		</label>
+		<label> <input type="checkbox" id="pel_exp">Explosivo</label>
 
-		<label>
-			<input type="checkbox" id="pel_com">
-			Comburente
-		</label>
+		<label> <input type="checkbox" id="pel_com">Comburente</label>
 
-		<label>
-			<input type="checkbox" id="pel_gas">
-			Gas
-		</label>
+		<label> <input type="checkbox" id="pel_gas">Gas</label>
+		
+		<h3>Extras</h3>
+		<!-- Observaciones/Comentarios -->
+		<label for="obs">Observaciones y/o Comentarios:</label>
+		<input
+			type="text"
+			id="obs"
+		>
 
+		<!-- Indicaciones de Peligro -->
+		<label for="indicaciones">Indicaciones de Peligro:</label>
+		<input
+			type="text"
+			id="Indicaciones"
+		>
+		
         <!-- Botón -->
         <button id="execute">
             EJECUTAR
         </button>
-
 
         <!-- Respuesta -->
         <h3>Respuesta</h3>
