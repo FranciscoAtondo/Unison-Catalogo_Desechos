@@ -2,8 +2,8 @@ const method = document.getElementById("method");
 const url = document.getElementById("url");
 
 const id = document.getElementById("id");
-const nivel = document.getElementById("nivel");
-const estante = document.getElementById("estante");
+const nivel = document.getElementById("niv_est");
+const estante = document.getElementById("id_est");
 const nombre = document.getElementById("nombre");
 const cas = document.getElementById("cas");
 const marca = document.getElementById("marca");
@@ -11,8 +11,9 @@ const cantidad = document.getElementById("cantidad");
 const unidades = document.getElementById("unidades");
 const fecha_ad = document.getElementById("fecha_ad");
 const fecha_ap = document.getElementById("fecha_ap");
-const fecha_cad = document.getEleemntById("fecha_cad");
+const fecha_cad = document.getElementById("fecha_cad");
 
+const pel_cor = document.getElementById(pel_non);
 const pel_cor = document.getElementById("pel_cor");
 const pel_tox = document.getElementById("pel_tox");
 const pel_mut = document.getElementById("pel_mut");
@@ -68,8 +69,8 @@ execute.addEventListener("click", async () => {
         options.headers["Prefer"] = "return=representation";
 
         const data = {
-            nivel: numeroOTextoVacio(nivel.value),
-            estante: estante.value,
+            id_est: numeroOTextoVacio(id_est.value),
+            niv_est: niv_est.value,
             nombre: nombre.value,
             marca: marca.value,
             cantidad: cantidad.value,
@@ -80,6 +81,7 @@ execute.addEventListener("click", async () => {
             fecha_ap: fecha_ap.value,
 			fecha_cad: fecha_cad.value,
 
+			pel_non: pel_non.checked,
             pel_cor: pel_cor.checked,
             pel_tox: pel_tox.checked,
             pel_mut: pel_mut.checked,
