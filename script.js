@@ -13,7 +13,7 @@ const fecha_ad = document.getElementById("fecha_ad");
 const fecha_ap = document.getElementById("fecha_ap");
 const fecha_cad = document.getElementById("fecha_cad");
 
-const pel_cor = document.getElementById(pel_non);
+const pel_non = document.getElementById("pel_non");
 const pel_cor = document.getElementById("pel_cor");
 const pel_tox = document.getElementById("pel_tox");
 const pel_mut = document.getElementById("pel_mut");
