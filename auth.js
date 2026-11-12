@@ -59,12 +59,19 @@ loginForm.addEventListener("submit", async (event) => {
         }
 
         // Se encontró una coincidencia en la tabla cuentas.
-        loginResponse.textContent =
-            "Acceso correcto. Abriendo el catálogo...";
+        if (cuentas.length > 0) {
+			response.textContent = "¡Inicio de sesión exitoso!";
 
-        contrasenaInput.value = "";
+			const goIndexButton = document.getElementById("go-index");
 
-        window.location.href = "index.html";
+			goIndexButton.hidden = false;
+
+			goIndexButton.addEventListener("click", () => {
+				window.location.href = "index.html";
+			});
+		} else {
+			response.textContent = "Usuario o contraseña incorrectos.";
+		}
 
     } catch (error) {
         loginResponse.textContent =
