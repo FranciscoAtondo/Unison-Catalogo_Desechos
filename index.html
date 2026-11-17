@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cliente Catalogo Residuos peligrosos</title>
+    <title>Residuos peligrosos</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,160 +14,11 @@
 
     <div class="container">
 
-        <h1>Cliente Catalogo Residuos peligrosos</h1>
+        <h1>Residuos peligrosos</h1>
 
-        <!-- Método HTTP -->
-        <label for="method">Método:</label>
-
-        <select id="method">
-            <option value="GET">GET</option>
-			<option value="POST">POST</option>
-            <option value="PATCH">PATCH</option>
-            <option value="DELETE">DELETE</option>
-        </select>
-
-
-        <!-- URL -->
-        <label for="url">URL:</label>
-
-        <input
-            type="text"
-            id="url"
-            value="http://localhost:3000/substancias"
-        >
-
-
-        <!-- Datos -->
-        <h3>Datos</h3>
-
-		<!-- ID -->
-        <label for="id">ID - Identificacion dentro de la Base de Datos individual:</label>
-        <input
-            type="number"
-            id="id"
-            placeholder="Para PATCH o DELETE"
-        >
-
-		<!-- Estante -->
-		<label for="id_est">Id. Estante:</label>
-		<input
-			type="text"
-			id="id_est"
-		>
-		
-		<!-- Nivel -->
-		<label for="niv_est">Nivel de Estante:</label>
-		<input
-			type="number"
-			id="niv_est"
-		>
-		
-		<!-- Nombre -->
-		<label for="nombre">Nombre de la Substancia:</label>
-		<input
-			type="text"
-			id="nombre"
-		>
-		
-		<!-- Numero CAS -->
-		<label for="cas">Numero CAS:</label>
-		<input
-			type="text"
-			id="cas"
-		>
-
-        <!-- Marca -->
-		<label for="marca">Marca:</label>
-		<input
-			type="text"
-			id="marca"
-		>
-
-        <!-- Cantidad -->
-		<label for="cantidad">Cantidad:</label>
-		<input
-			type="text"
-			id="cantidad"
-		>
-
-        <!-- Unidades -->
-		<label for="unidades">Tipo de Unidades de Cantidad:</label>
-		<input
-			type="number"
-			id="unidades"
-		>
-
-        <!-- Fecha Adquicision -->
-		<label for="fecha_ad">Fecha de Adquicision:</label>
-		<input
-			type="text"
-			id="fecha_ad"
-		>
-
-        <!-- Fecha Apertura -->
-		<label for="fecha_ap">Fecha de Apertura:</label>
-		<input
-			type="text"
-			id="fecha_ap"
-		>
-		
-		<!-- Fecha Caducidad -->
-		<label for="fecha_cad">Fecha de Caducidad:</label>
-		<input
-			type="text"
-			id="fecha_cad"
-		>
-
-		<h3>Peligrosidad</h3>
-
-		<label>	<img src="none.png" width="60" height="60" >Ninguno<input type="checkbox" id="pel_non"></label>
-		
-		<label> <img src="corrosive.png" width="60" height="60" >Corrosivo<input type="checkbox" id="pel_cor"></label>
-
-		<label>	<img src="Toxic.png" width="60" height="60" >Toxico<input type="checkbox" id="pel_tox"></label>
-
-		<label> <img src="Mutagenic.png" width="60" height="60" >Mutagenico<input type="checkbox" id="pel_mut"></label>
-
-		<label> <img src="Flame.png" width="60" height="60" >Inflamable<input type="checkbox" id="pel_inf"></label>
-
-		<label> <img src="irrating.png" width="60" height="60" >Irritante<input type="checkbox" id="pel_irr"></label>
-
-		<label> <img src="Explosive.png" width="60" height="60" >Explosivo<input type="checkbox" id="pel_exp"></label>
-
-		<label> <img src="Comburante.png" width="60" height="60" >Comburante<input type="checkbox" id="pel_com"></label>
-
-		<label> <img src="GasCylinder.png" width="60" height="60" >Cilindro de Gas<input type="checkbox" id="pel_gas"></label>
-		
-		<h3>Extras</h3>
-		<!-- Observaciones/Comentarios -->
-		<label for="obs">Observaciones y/o Comentarios:</label>
-		<input
-			type="text"
-			id="obs"
-		>
-
-		<!-- Indicaciones de Peligro -->
-		<label for="indicaciones">Indicaciones de Peligro:</label>
-		<input
-			type="text"
-			id="Indicaciones"
-		>
-		
-        <!-- Botón -->
-        <button id="execute">
-            EJECUTAR
-        </button>
-
-        <!-- Respuesta -->
-        <h3>Respuesta</h3>
-
-        <pre id="response"></pre>
-
-    </div>
-
-    <script src="script.js"></script>
+		<p><a href="consulta.html">Catalogo de Residuos peligrosos</a></p>
+		<p><a href="advertencia.html">Palabras de Advertencia</a></p>
 
 </body>
 
 </html>
-```
