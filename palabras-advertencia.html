@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palabras de Advertencia</title>
+    <script src="palabras-advertencia.js" defer></script>
 </head>
 <body>
 
@@ -13,7 +14,7 @@
         Consultar catálogo
     </button>
 
-    <p id="mensaje"></p>
+    <p id="mensaje" aria-live="polite"></p>
 
     <table border="1">
         <thead>
@@ -28,8 +29,6 @@
         <tbody id="tabla-advertencias">
         </tbody>
     </table>
-
-    <script src="palabras-advertencia.js"></script>
 
 </body>
 </html>
