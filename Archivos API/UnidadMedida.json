@@ -1,0 +1,26 @@
+[
+    {
+        "idUnidadMedida": 4,
+        "nombre": "Gramo",
+        "abreviatura": "g",
+        "activo": true
+    },
+    {
+        "idUnidadMedida": 3,
+        "nombre": "Kilogramo",
+        "abreviatura": "kg",
+        "activo": true
+    },
+    {
+        "idUnidadMedida": 1,
+        "nombre": "Litro",
+        "abreviatura": "L",
+        "activo": true
+    },
+    {
+        "idUnidadMedida": 2,
+        "nombre": "Mililitro",
+        "abreviatura": "mL",
+        "activo": true
+    }
+]

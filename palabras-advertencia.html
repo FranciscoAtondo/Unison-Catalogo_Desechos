@@ -3,32 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
     <title>Palabras de Advertencia</title>
     <script src="palabras-advertencia.js" defer></script>
+	
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="container">
+	
+		<h1>Catálogo de Palabras de Advertencia</h1>
 
-    <h1>Catálogo de Palabras de Advertencia</h1>
+		<button id="btn-consultar" type="button">
+			Consultar catálogo
+		</button>
 
-    <button id="btn-consultar">
-        Consultar catálogo
-    </button>
+		<p id="mensaje" aria-live="polite"></p>
 
-    <p id="mensaje" aria-live="polite"></p>
+		<hr>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Estado</th>
-            </tr>
-        </thead>
+		<h2>Registrar o modificar palabra</h2>
 
-        <tbody id="tabla-advertencias">
-        </tbody>
-    </table>
+		<form id="form-advertencia">
 
+			<label for="id-advertencia">ID (dejar vacío para nuevo registro):</label>
+			<input
+				type="number"
+				id="id-advertencia"
+				min="1"
+				placeholder="ID para modificar"
+			>
+
+			<br><br>
+
+			<label for="nombre-advertencia">Nombre:</label>
+			<input
+				type="text"
+				id="nombre-advertencia"
+				required
+				placeholder="Ej. PELIGRO"
+			>
+
+			<br><br>
+
+			<label for="descripcion-advertencia">Descripción:</label>
+			<textarea
+				id="descripcion-advertencia"
+				placeholder="Descripción de la palabra"
+			></textarea>
+
+			<br><br>
+
+			<button type="submit" id="btn-guardar">
+				Guardar
+			</button>
+
+			<button type="button" id="btn-cancelar">
+				Limpiar formulario
+			</button>
+
+		</form>
+
+		<hr>
+
+		<h2>Registros existentes</h2>
+
+		<table border="1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nombre</th>
+					<th>Descripción</th>
+					<th>Estado</th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+
+			<tbody id="tabla-advertencias"></tbody>
+		</table>
+
+	</div>
 </body>
 </html>

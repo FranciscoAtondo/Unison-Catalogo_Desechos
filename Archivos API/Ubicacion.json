@@ -1,0 +1,16 @@
+[
+    {
+        "idUbicacion": 2,
+        "clave": "5H-L102",
+        "nombre": "LABORATORIO DE BIOQUÍMICA",
+        "descripcion": "",
+        "activo": true
+    },
+    {
+        "idUbicacion": 1,
+        "clave": "5D-L101",
+        "nombre": "LABORATORIO DE INVESTIGACIÓN QUÍMICA",
+        "descripcion": "",
+        "activo": true
+    }
+]

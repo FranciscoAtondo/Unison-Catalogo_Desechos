@@ -1,0 +1,56 @@
+[
+    {
+        "idPresentacion": 5,
+        "nombre": "Bolsa",
+        "cantidad": 1,
+        "idUnidadMedida": 3,
+        "unidadMedida": "Kilogramo",
+        "abreviatura": "kg",
+        "activo": true
+    },
+    {
+        "idPresentacion": 1,
+        "nombre": "Botella",
+        "cantidad": 1,
+        "idUnidadMedida": 1,
+        "unidadMedida": "Litro",
+        "abreviatura": "L",
+        "activo": true
+    },
+    {
+        "idPresentacion": 4,
+        "nombre": "Botella",
+        "cantidad": 1,
+        "idUnidadMedida": 2,
+        "unidadMedida": "Mililitro",
+        "abreviatura": "mL",
+        "activo": true
+    },
+    {
+        "idPresentacion": 3,
+        "nombre": "Frasco",
+        "cantidad": 500,
+        "idUnidadMedida": 2,
+        "unidadMedida": "Mililitro",
+        "abreviatura": "mL",
+        "activo": true
+    },
+    {
+        "idPresentacion": 6,
+        "nombre": "Frasco",
+        "cantidad": 500,
+        "idUnidadMedida": 4,
+        "unidadMedida": "Gramo",
+        "abreviatura": "g",
+        "activo": true
+    },
+    {
+        "idPresentacion": 2,
+        "nombre": "Garrafa",
+        "cantidad": 5,
+        "idUnidadMedida": 1,
+        "unidadMedida": "Litro",
+        "abreviatura": "L",
+        "activo": true
+    }
+]

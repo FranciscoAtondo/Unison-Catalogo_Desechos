@@ -1,0 +1,74 @@
+[
+    {
+        "idPictograma": 1,
+        "codigo": "GHS01",
+        "nombre": "Explosivo",
+        "descripcion": "Explosivos",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/1/imagen"
+    },
+    {
+        "idPictograma": 2,
+        "codigo": "GHS02",
+        "nombre": "Inflamable",
+        "descripcion": "Sustancias y mezclas inflamables",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/2/imagen"
+    },
+    {
+        "idPictograma": 3,
+        "codigo": "GHS03",
+        "nombre": "Comburente",
+        "descripcion": "Sustancias y mezclas comburentes",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/3/imagen"
+    },
+    {
+        "idPictograma": 4,
+        "codigo": "GHS04",
+        "nombre": "Gas a presiÃ³n",
+        "descripcion": "Gases a presiÃ³n",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/4/imagen"
+    },
+    {
+        "idPictograma": 5,
+        "codigo": "GHS05",
+        "nombre": "Corrosivo",
+        "descripcion": "CorrosiÃ³n o lesiones oculares graves",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/5/imagen"
+    },
+    {
+        "idPictograma": 6,
+        "codigo": "GHS06",
+        "nombre": "Toxicidad aguda",
+        "descripcion": "Toxicidad aguda",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/6/imagen"
+    },
+    {
+        "idPictograma": 7,
+        "codigo": "GHS07",
+        "nombre": "Irritante o nocivo",
+        "descripcion": "IrritaciÃ³n, sensibilizaciÃ³n cutÃ¡nea o toxicidad aguda de menor categorÃ­a",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/7/imagen"
+    },
+    {
+        "idPictograma": 8,
+        "codigo": "GHS08",
+        "nombre": "Peligro grave para la salud",
+        "descripcion": "Peligro grave para la salud",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/8/imagen"
+    },
+    {
+        "idPictograma": 9,
+        "codigo": "GHS09",
+        "nombre": "Peligroso para el medio ambiente",
+        "descripcion": "Peligroso para el medio ambiente acuÃ¡tico",
+        "activo": true,
+        "imagenUrl": "https://ssi-test.unison.mx/Net10/Adm/SSPAmbiental/api/Pictograma/9/imagen"
+    }
+]

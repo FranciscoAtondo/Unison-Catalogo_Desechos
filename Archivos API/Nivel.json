@@ -1,0 +1,16 @@
+[
+    {
+        "idNivel": 1,
+        "idUbicacion": 1,
+        "numeroNivel": 1,
+        "descNivel": "Nivel inferior - almacenamiento de líquidos",
+        "activo": true
+    },
+    {
+        "idNivel": 2,
+        "idUbicacion": 1,
+        "numeroNivel": 2,
+        "descNivel": "Nivel intermedio",
+        "activo": true
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "idInventarioMovimientoTipo": 3,
+        "movimientoTipo": "AJUSTE",
+        "operacion": "A",
+        "activo": true
+    },
+    {
+        "idInventarioMovimientoTipo": 7,
+        "movimientoTipo": "Ajuste",
+        "operacion": "A",
+        "activo": true
+    },
+    {
+        "idInventarioMovimientoTipo": 4,
+        "movimientoTipo": "DISPOSICIÓN",
+        "operacion": null,
+        "activo": true
+    },
+    {
+        "idInventarioMovimientoTipo": 5,
+        "movimientoTipo": "Entrada",
+        "operacion": "+",
+        "activo": true
+    },
+    {
+        "idInventarioMovimientoTipo": 1,
+        "movimientoTipo": "ENTRADA",
+        "operacion": "+",
+        "activo": true
+    },
+    {
+        "idInventarioMovimientoTipo": 2,
+        "movimientoTipo": "SALIDA",
+        "operacion": "-",
+        "activo": true
+    },
+    {
+        "idInventarioMovimientoTipo": 6,
+        "movimientoTipo": "Salida",
+        "operacion": "-",
+        "activo": true
+    }
+]

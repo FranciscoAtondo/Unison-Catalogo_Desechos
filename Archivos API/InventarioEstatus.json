@@ -1,0 +1,38 @@
+[
+    {
+        "idEstatus": 2,
+        "estatus": "Agotado",
+        "descripcion": "Sin existencias disponibles",
+        "activo": true
+    },
+    {
+        "idEstatus": 3,
+        "estatus": "Caducado",
+        "descripcion": "Producto con fecha de caducidad vencida",
+        "activo": true
+    },
+    {
+        "idEstatus": 5,
+        "estatus": "Dañado",
+        "descripcion": "Producto o envase que presenta daños",
+        "activo": true
+    },
+    {
+        "idEstatus": 6,
+        "estatus": "Desechado",
+        "descripcion": "Producto retirado del inventario para su disposición",
+        "activo": true
+    },
+    {
+        "idEstatus": 1,
+        "estatus": "Disponible",
+        "descripcion": "Disponible para su uso",
+        "activo": true
+    },
+    {
+        "idEstatus": 4,
+        "estatus": "En cuarentena",
+        "descripcion": "Producto temporalmente restringido para su uso",
+        "activo": true
+    }
+]

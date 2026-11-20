@@ -1,0 +1,30 @@
+[
+    {
+        "idEstante": 1,
+        "idNivel": 1,
+        "claveEstante": "A",
+        "descEstante": "Estante A",
+        "activo": true
+    },
+    {
+        "idEstante": 2,
+        "idNivel": 1,
+        "claveEstante": "B",
+        "descEstante": "Estante B",
+        "activo": true
+    },
+    {
+        "idEstante": 3,
+        "idNivel": 1,
+        "claveEstante": "C",
+        "descEstante": "Estante C",
+        "activo": true
+    },
+    {
+        "idEstante": 4,
+        "idNivel": 2,
+        "claveEstante": "A",
+        "descEstante": "Estante A",
+        "activo": true
+    }
+]
