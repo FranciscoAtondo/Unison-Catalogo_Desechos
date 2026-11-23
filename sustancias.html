@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Sustancias</title>
+
+    <script src="sustancias.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        #mensaje {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #mensaje:empty {
+            display: none;
+        }
+
+        .mensaje-error {
+            color: #842029;
+            background-color: #f8d7da;
+            border: 1px solid #f5c2c7;
+        }
+
+        .mensaje-exito {
+            color: #0f5132;
+            background-color: #d1e7dd;
+            border: 1px solid #badbcc;
+        }
+
+        .mensaje-info {
+            color: #084298;
+            background-color: #cfe2ff;
+            border: 1px solid #b6d4fe;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Catálogo de Sustancias</h1>
+
+        <!-- CONSULTA DE SUSTANCIAS -->
+        <section>
+            <h2>Consultar sustancias</h2>
+
+            <form id="form-consulta">
+
+                <label for="id-sustancia">ID de sustancia:</label>
+                <input
+                    type="number"
+                    id="id-sustancia"
+                    min="1"
+                    step="1"
+                    placeholder="Todas las sustancias"
+                >
+
+                <label>
+                    <input type="checkbox" id="solo-activas" checked>
+                    Mostrar solamente sustancias activas
+                </label>
+
+                <button type="submit">Consultar</button>
+
+                <button type="button" id="btn-limpiar">
+                    Limpiar búsqueda
+                </button>
+
+            </form>
+        </section>
+
+        <!-- MENSAJES -->
+        <p id="mensaje" aria-live="polite"></p>
+
+        <hr>
+
+        <!-- RESULTADOS -->
+        <section>
+            <h2>Resultados</h2>
+
+            <div class="tabla-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Fórmula química</th>
+                            <th>CAS</th>
+                            <th>Estado físico</th>
+                            <th>Palabra de advertencia (ID)</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-sustancias"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- REGISTRO Y MODIFICACIÓN -->
+        <section>
+
+            <h2 id="titulo-formulario">Registrar sustancia</h2>
+
+            <form id="form-sustancia">
+
+                <input type="hidden" id="registro-id">
+
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" required>
+
+                <label for="nombre-quimico">Nombre químico</label>
+                <input type="text" id="nombre-quimico">
+
+                <label for="formula-quimica">Fórmula química</label>
+                <input type="text" id="formula-quimica">
+
+                <label for="cas">CAS</label>
+                <input type="text" id="cas">
+
+                <label for="ce">CE</label>
+                <input type="text" id="ce">
+
+                <label for="numero-onu">Número ONU</label>
+                <input type="text" id="numero-onu">
+
+                <label for="peso-molecular">Peso molecular</label>
+                <input type="number" id="peso-molecular" step="any" min="0">
+
+                <label for="estado-fisico">Estado físico</label>
+                <input type="text" id="estado-fisico">
+
+                <label for="densidad">Densidad</label>
+                <input type="number" id="densidad" step="any" min="0">
+
+                <label for="pureza">Pureza</label>
+                <input type="number" id="pureza" step="any" min="0">
+
+                <label for="concentracion">Concentración</label>
+                <input type="number" id="concentracion" step="any" min="0">
+
+                <label for="unidad-concentracion">Unidad de concentración</label>
+                <input type="text" id="unidad-concentracion">
+
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion"></textarea>
+
+                <label for="id-palabra-advertencia">
+                    ID de palabra de advertencia
+                </label>
+                <input
+                    type="number"
+                    id="id-palabra-advertencia"
+                    min="1"
+                    step="1"
+                >
+
+                <label for="id-usuario">ID de usuario *</label>
+                <input
+                    type="number"
+                    id="id-usuario"
+                    min="1"
+                    step="1"
+                    required
+                >
+
+                <button type="submit" id="btn-guardar">
+                    Guardar sustancia
+                </button>
+
+                <button type="button" id="btn-cancelar-edicion">
+                    Limpiar formulario
+                </button>
+
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
