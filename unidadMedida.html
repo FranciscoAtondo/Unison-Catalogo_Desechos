@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Unidades de Medida</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="unidadMedida.js" defer></script>
+
+    <style>
+        #mensaje {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #mensaje:empty {
+            display: none;
+        }
+
+        .mensaje-error {
+            color: #842029;
+            background-color: #f8d7da;
+            border: 1px solid #f5c2c7;
+        }
+
+        .mensaje-exito {
+            color: #0f5132;
+            background-color: #d1e7dd;
+            border: 1px solid #badbcc;
+        }
+
+        .mensaje-info {
+            color: #084298;
+            background-color: #cfe2ff;
+            border: 1px solid #b6d4fe;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Catálogo de Unidades de Medida</h1>
+
+        <!-- CONSULTAR -->
+        <section>
+            <h2>Consultar Tipos de Unidades</h2>
+
+            <form id="form-consulta">
+
+                <label for="id-consulta">ID de la Unidad:</label>
+                <input
+                    type="number"
+                    id="id-consulta"
+                    min="1"
+                    step="1"
+                    placeholder="Todos los tipos"
+                >
+
+                <label>
+                    <input type="checkbox" id="solo-activas" checked>
+                    Mostrar solamente Tipos de Unidades activos.
+                </label>
+
+                <button type="submit" id="btn-consultar">
+                    Consultar catálogo
+                </button>
+
+                <button type="button" id="btn-limpiar-consulta">
+                    Limpiar búsqueda
+                </button>
+
+            </form>
+        </section>
+
+        <p id="mensaje" aria-live="polite"></p>
+
+        <hr>
+
+        <!-- RESULTADOS -->
+        <section>
+            <h2>Tipos de Unidades Existentes</h2>
+
+            <div class="tabla-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+							<th>Abreviatura</th>
+                            <th>Activo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-unidades"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- REGISTRAR O MODIFICAR -->
+        <section>
+            <h2 id="titulo-formulario">Registrar Unidad</h2>
+
+            <form id="form-unidad">
+
+                <input type="hidden" id="idunidad">
+
+                <label for="unidadNombre">Nombre de la Unidad *</label>
+                <input
+                    type="text"
+                    id="unidadNombre"
+                    required
+                    placeholder="Nombre de la Unidad"
+                >
+				
+				<label for="unidadNombre">Abreviatura *</label>
+                <input
+                    type="text"
+                    id="abreviatura"
+                    required
+                    placeholder="Abreviatura"
+                >
+
+                <button type="submit" id="btn-guardar">
+                    Guardar Tipo de Unidad
+                </button>
+
+                <button type="button" id="btn-cancelar">
+                    Limpiar formulario
+                </button>
+
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
